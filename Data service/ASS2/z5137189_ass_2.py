@@ -125,46 +125,47 @@ class worldbank5(Resource):
                     "value": i['value']
                 },200
 
-#this route need to test in the browser by inputing
-# eg: http://127.0.0.1:5000/collections/<collections_id>/2015?q=top20 in the Address Bar
+
 parser = reqparse.RequestParser()
 parser.add_argument('q')
 @api.route('/collections/<string:collection_id>/<string:year>')
 @api.response(200, 'OK')
-@api.response(200, 'OK')
 @api.response(400, 'quary format is not correct')
+@api.expect(parser, validate=True)
 class worldbank6(Resource):
     def get(self, collection_id, year):
         # get quary as JSON string
         args = parser.parse_args()
         # retrieve the query parameters
         q = args.get('q')
-        flag = False
+        flag = True
         cut = 3
-        if q[:3] == 'top' or q[:4] == 'down':
+        if q[:3] == 'top' or q[:6] == 'bottom':
             if q[0] != 't':
-                flag = True
-                cut = 4
-            try:
-                x = [db.records.find_one({'_id': ObjectId(collection_id)})]
-                buff = sorted(x[0]['entries'], key=lambda k: k['value'], reverse=flag)
-                lis = []
-                a = 1
-                for i in range(len(buff)):
-                    if a <= int(q[cut:]) and buff[i]['date'] == year:
-                        lis.append(buff[i])
-                        a += 1
-                if q[0] == 'd':
-                    lis = sorted(lis,key=lambda k:k['value'])
-                segment = {
-                    "indicator": x[0]['indicator'],
-                    "indicator_value": x[0]['indicator_value'],
-                    "entries": lis
-                }
-                return segment,200
-            except:
-                return{ "message" :"Collection = {} is not exist in the database".format(collection_id)},404
-        return {"message": "quary format {} is not correct".format(q)}, 400
+                flag = False
+                cut = 6
+        else:
+            return {"message": "quary format {} is not correct".format(q)}, 400
+        try:
+            x = [db.records.find_one({'_id': ObjectId(collection_id)})]
+            buff = sorted(x[0]['entries'], key=lambda k: k['value'], reverse=flag)
+            lis = []
+            a = 1
+            for i in range(len(buff)):
+                if a <= int(q[cut:]) and buff[i]['date'] == year:
+                    lis.append(buff[i])
+                    a += 1
+            if q[0] == 'b':
+                lis = sorted(lis,key=lambda k:k['value'])
+            segment = {
+                "indicator": x[0]['indicator'],
+                "indicator_value": x[0]['indicator_value'],
+                "entries": lis
+            }
+            return segment,200
+        except:
+            return{ "message" :"Collection = {} is not exist in the database".format(collection_id)},404
+
 
 
 if __name__ == '__main__':
