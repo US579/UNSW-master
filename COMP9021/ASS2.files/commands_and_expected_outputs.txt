@@ -1,0 +1,249 @@
+TEST 1 BEGIN
+$ python3 -c "from frieze import *; Frieze('incorrect_input_1.txt')"
+Traceback (most recent call last):
+...
+frieze.FriezeError: Incorrect input.
+TEST 1 END
+
+TEST 2 BEGIN
+$ python3 -c "from frieze import *; Frieze('incorrect_input_2.txt')"
+Traceback (most recent call last):
+...
+frieze.FriezeError: Incorrect input.
+TEST 2 END
+
+TEST 3 BEGIN
+$ python3 -c "from frieze import *; Frieze('incorrect_input_3.txt')"
+Traceback (most recent call last):
+...
+frieze.FriezeError: Incorrect input.
+TEST 3 END
+
+TEST 4 BEGIN
+$ python3 -c "from frieze import *; Frieze('incorrect_input_4.txt')"
+Traceback (most recent call last):
+...
+frieze.FriezeError: Incorrect input.
+TEST 4 END
+
+TEST 5 BEGIN
+$ python3 -c "from frieze import *; Frieze('incorrect_input_5.txt')"
+Traceback (most recent call last):
+...
+frieze.FriezeError: Incorrect input.
+TEST 5 END
+
+TEST 6 BEGIN
+$ python3 -c "from frieze import *; Frieze('incorrect_input_6.txt')"
+Traceback (most recent call last):
+...
+frieze.FriezeError: Incorrect input.
+TEST 6 END
+
+TEST 7 BEGIN
+$ python3 -c "from frieze import *; Frieze('incorrect_input_7.txt')"
+Traceback (most recent call last):
+...
+frieze.FriezeError: Incorrect input.
+TEST 7 END
+
+TEST 8 BEGIN
+$ python3 -c "from frieze import *; Frieze('not_a_frieze_1.txt')"
+Traceback (most recent call last):
+...
+frieze.FriezeError: Input does not represent a frieze.
+TEST 8 END
+
+TEST 9 BEGIN
+$ python3 -c "from frieze import *; Frieze('not_a_frieze_2.txt')"
+Traceback (most recent call last):
+...
+frieze.FriezeError: Input does not represent a frieze.
+TEST 9 END
+
+TEST 10 BEGIN
+$ python3 -c "from frieze import *; Frieze('not_a_frieze_3.txt')"
+...
+frieze.FriezeError: Input does not represent a frieze.
+TEST 10 END
+
+TEST 11 BEGIN
+$ python3 -c "from frieze import *; Frieze('not_a_frieze_4.txt')"
+Traceback (most recent call last):
+...
+frieze.FriezeError: Input does not represent a frieze.
+TEST 11 END
+
+TEST 12 BEGIN
+$ python3 -c "from frieze import *; Frieze('not_a_frieze_5.txt')"
+Traceback (most recent call last):
+...
+frieze.FriezeError: Input does not represent a frieze.
+TEST 12 END
+
+TEST 13 BEGIN
+$ python3 -c "from frieze import *; Frieze('not_a_frieze_6.txt')"
+Traceback (most recent call last):
+...
+frieze.FriezeError: Input does not represent a frieze.
+TEST 13 END
+
+TEST 14 BEGIN
+$ python3 -c "from frieze import *; Frieze('not_a_frieze_7.txt')"
+Traceback (most recent call last):
+...
+frieze.FriezeError: Input does not represent a frieze.
+TEST 14 END
+
+TEST 15 BEGIN
+$ python3 -c "from frieze import *; Frieze('not_a_frieze_8.txt')"
+Traceback (most recent call last):
+...
+frieze.FriezeError: Input does not represent a frieze.
+TEST 15 END
+
+TEST 16 BEGIN
+$ python3 -c "from frieze import *; Frieze('not_a_frieze_9.txt')"
+Traceback (most recent call last):
+...
+frieze.FriezeError: Input does not represent a frieze.
+TEST 16 END
+
+TEST 17 BEGIN
+$ python3 -c "from frieze import *; frieze = Frieze('frieze_1.txt'); frieze.analyse()"
+Pattern is a frieze of period 2 that is invariant under translation only.
+TEST 17 END
+
+TEST 18 BEGIN
+$ python3 -c "from frieze import *; frieze = Frieze('frieze_2.txt'); frieze.analyse()"
+Pattern is a frieze of period 16 that is invariant under translation only.
+TEST 18 END
+
+TEST 19 BEGIN
+$ python3 -c "from frieze import *; frieze = Frieze('frieze_3.txt'); frieze.analyse()"
+Pattern is a frieze of period 7 that is invariant under translation
+        and vertical reflection only.
+TEST 19 END
+
+TEST 20 BEGIN
+$ python3 -c "from frieze import *; frieze = Frieze('frieze_4.txt'); frieze.analyse()"
+Pattern is a frieze of period 10 that is invariant under translation
+        and vertical reflection only.
+TEST 20 END
+
+TEST 21 BEGIN
+$ python3 -c "from frieze import *; frieze = Frieze('frieze_5.txt'); frieze.analyse()"
+Pattern is a frieze of period 3 that is invariant under translation
+        and horizontal reflection only.
+TEST 21 END
+
+TEST 22 BEGIN
+$ python3 -c "from frieze import *; frieze = Frieze('frieze_6.txt'); frieze.analyse()"
+Pattern is a frieze of period 16 that is invariant under translation
+        and horizontal reflection only.
+TEST 22 END
+
+TEST 23 BEGIN
+$ python3 -c "from frieze import *; frieze = Frieze('frieze_7.txt'); frieze.analyse()"
+Pattern is a frieze of period 8 that is invariant under translation
+        and glided horizontal reflection only.
+TEST 23 END
+
+TEST 24 BEGIN
+$ python3 -c "from frieze import *; frieze = Frieze('frieze_8.txt'); frieze.analyse()"
+Pattern is a frieze of period 6 that is invariant under translation
+        and glided horizontal reflection only.
+TEST 24 END
+
+TEST 25 BEGIN
+$ python3 -c "from frieze import *; frieze = Frieze('frieze_9.txt'); frieze.analyse()"
+Pattern is a frieze of period 21 that is invariant under translation
+        and rotation only.
+TEST 25 END
+
+TEST 26 BEGIN
+$ python3 -c "from frieze import *; frieze = Frieze('frieze_10.txt'); frieze.analyse()"
+Pattern is a frieze of period 8 that is invariant under translation
+        and rotation only.
+TEST 26 END
+
+TEST 27 BEGIN
+$ python3 -c "from frieze import *; frieze = Frieze('frieze_11.txt'); frieze.analyse()"
+Pattern is a frieze of period 10 that is invariant under translation,
+        glided horizontal and vertical reflections, and rotation only.
+TEST 27 END
+
+TEST 28 BEGIN
+$ python3 -c "from frieze import *; frieze = Frieze('frieze_12.txt'); frieze.analyse()"
+Pattern is a frieze of period 4 that is invariant under translation,
+        glided horizontal and vertical reflections, and rotation only.
+TEST 28 END
+
+TEST 29 BEGIN
+$ python3 -c "from frieze import *; frieze = Frieze('frieze_13.txt'); frieze.analyse()"
+Pattern is a frieze of period 11 that is invariant under translation,
+        horizontal and vertical reflections, and rotation only.
+TEST 29 END
+
+TEST 30 BEGIN
+$ python3 -c "from frieze import *; frieze = Frieze('frieze_14.txt'); frieze.analyse()"
+Pattern is a frieze of period 5 that is invariant under translation,
+        horizontal and vertical reflections, and rotation only.
+TEST 30 END
+
+TEST 31 BEGIN
+$ python3 -c "from frieze import *; frieze = Frieze('frieze_1.txt'); frieze.display()"
+TEST 31 END
+
+TEST 32 BEGIN
+$ python3 -c "from frieze import *; frieze = Frieze('frieze_2.txt'); frieze.display()"
+TEST 32 END
+
+TEST 33 BEGIN
+$ python3 -c "from frieze import *; frieze = Frieze('frieze_3.txt'); frieze.display()"
+TEST 33 END
+
+TEST 34 BEGIN
+$ python3 -c "from frieze import *; frieze = Frieze('frieze_4.txt'); frieze.display()"
+TEST 34 END
+
+TEST 35 BEGIN
+$ python3 -c "from frieze import *; frieze = Frieze('frieze_5.txt'); frieze.display()"
+TEST 35 END
+
+TEST 36 BEGIN
+$ python3 -c "from frieze import *; frieze = Frieze('frieze_6.txt'); frieze.display()"
+TEST 36 END
+
+TEST 37 BEGIN
+$ python3 -c "from frieze import *; frieze = Frieze('frieze_7.txt'); frieze.display()"
+TEST 37 END
+
+TEST 38 BEGIN
+$ python3 -c "from frieze import *; frieze = Frieze('frieze_8.txt'); frieze.display()"
+TEST 38 END
+
+TEST 39 BEGIN
+$ python3 -c "from frieze import *; frieze = Frieze('frieze_9.txt'); frieze.display()"
+TEST 39 END
+
+TEST 40 BEGIN
+$ python3 -c "from frieze import *; frieze = Frieze('frieze_10.txt'); frieze.display()"
+TEST 40 END
+
+TEST 41 BEGIN
+$ python3 -c "from frieze import *; frieze = Frieze('frieze_11.txt'); frieze.display()"
+TEST 41 END
+
+TEST 42 BEGIN
+$ python3 -c "from frieze import *; frieze = Frieze('frieze_12.txt'); frieze.display()"
+TEST 42 END
+
+TEST 43 BEGIN
+$ python3 -c "from frieze import *; frieze = Frieze('frieze_13.txt'); frieze.display()"
+TEST 43 END
+
+TEST 44 BEGIN
+$ python3 -c "from frieze import *; frieze = Frieze('frieze_14.txt'); frieze.display()"
+TEST 44 END
+
