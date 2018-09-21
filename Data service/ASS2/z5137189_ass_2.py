@@ -13,7 +13,7 @@ api = Api(app)
 class worldbank1(Resource):
     @api.response(200, 'OK')
     @api.response(201, 'Created')
-    @api.response(400, 'input indicator id doesn\'t exist ')
+    @api.response(404, 'input indicator id doesn\'t exist ')
     def post(self, indicator):
         #check whether the indicator exist in the Mongodb,if exist return 200
         x = [db.records.find_one({'indicator': indicator})]
@@ -33,7 +33,7 @@ class worldbank1(Resource):
         data2 = wb_data2.json()
         #check whether the indicator is the exist or not, exist keep going otherwise return 400
         if 'message' in data1[0] or 'message' in data2[0]:
-            return {'message':'indicator id doesn\'t exist in the data source'}, 400
+            return {'message':'indicator id doesn\'t exist in the data source'}, 404
 
         user_record = db.records
         create_time = time.asctime(time.localtime(time.time()))
@@ -131,6 +131,7 @@ parser.add_argument('q')
 @api.route('/collections/<string:collection_id>/<string:year>')
 @api.response(200, 'OK')
 @api.response(400, 'quary format is not correct')
+@api.response(404, 'Collection is not exist in the database')
 @api.expect(parser, validate=True)
 class worldbank6(Resource):
     def get(self, collection_id, year):
@@ -140,6 +141,21 @@ class worldbank6(Resource):
         q = args.get('q')
         flag = True
         cut = 3
+        if not q:
+            lis1 = []
+            x = [db.records.find_one({'_id': ObjectId(collection_id)})]
+            try:
+                for i in x[0]['entries']:
+                    if i['date'] == year:
+                        lis1.append(i)
+                segment1 = {
+                    "indicator": x[0]['indicator'],
+                    "indicator_value": x[0]['indicator_value'],
+                    "entries": lis1
+                }
+                return segment1, 200
+            except:
+                return {"message": "Collection = {} is not exist in the database".format(collection_id)}, 404
         if q[:3] == 'top' or q[:6] == 'bottom':
             if q[0] != 't':
                 flag = False
