@@ -1,0 +1,31 @@
+Hi, everyone
+
+
+
+Have you ever think about were there any cross-functional issues in this project?
+
+before we discuss it, it better to know what is the cross-functional issues, so, I post it here what is the most common issue int the cross-functional issues
+
+1 -   Misaligned Goals and Priorities
+Employees focus on things that impact how they are measured and reward. If the work produced by the cross functional team is not part of the employee’s performance assessment (as is often the case), it stands to reason that he will give it a lower priority. Leaders who want to encourage cross functional collaboration should be sure to identify the strategic goals toward which employees should be working, and reward those who do. 
+
+ 
+
+2 – Too Much or Too Little Communication
+When a team comes together, they need to establish the right cadence of communication for the group. If people are not well enough informed and in the loop, balls can be dropped and deadlines missed. On the other hand, too many meetings or an avalanche of email can hurt productivity.
+
+ 
+
+3 – Lack of Trust
+It would be nice if every employee trusted that every other employee was competent and enthusiastic about doing their job. For most organizations, this trust simply isn’t there. Working with others outside one’s department requires putting faith into the abilities and willingness of someone new. Trust between different parts of the organization can be established only through a series of promises kept, so it makes sense to start with a small project that can generate a quick win and establish expectations.
+
+ 
+
+4 - No Method for Measuring Impact
+If you don’t have a way to measure the impact of a cross functional team’s work based on business results, it is difficult to justify the investment of resources or to get enthusiastic participation. Each project the team takes on should begin with the determination of how the results will be measured. Of course, once this is established, it's crucial to follow through and measure the impact of the work, as well as to recognize the contributors. 
+
+ 
+
+5 – Technology Disconnect
+It is not uncommon for different departments to rely on different technologies for collaboration and information management. This can impede the progress of cross functional teams and make working together unnecessarily difficult. Companies that are serious about collaboration across divisions and roles choose to leverage a single platform for the whole organization that supports team efforts and serves as a repository for tribal knowledge. 
+
