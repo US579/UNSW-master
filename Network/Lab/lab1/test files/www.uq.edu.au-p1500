@@ -1,0 +1,55 @@
+PING www.uq.edu.au (130.102.131.123): 1472 data bytes
+1480 bytes from 130.102.131.123: icmp_seq=0 ttl=241 time=18.686 ms
+1480 bytes from 130.102.131.123: icmp_seq=1 ttl=241 time=18.881 ms
+1480 bytes from 130.102.131.123: icmp_seq=2 ttl=241 time=20.434 ms
+1480 bytes from 130.102.131.123: icmp_seq=3 ttl=241 time=18.614 ms
+1480 bytes from 130.102.131.123: icmp_seq=4 ttl=241 time=20.362 ms
+1480 bytes from 130.102.131.123: icmp_seq=5 ttl=241 time=20.921 ms
+1480 bytes from 130.102.131.123: icmp_seq=6 ttl=241 time=20.706 ms
+1480 bytes from 130.102.131.123: icmp_seq=7 ttl=241 time=20.408 ms
+1480 bytes from 130.102.131.123: icmp_seq=8 ttl=241 time=29.966 ms
+1480 bytes from 130.102.131.123: icmp_seq=9 ttl=241 time=20.596 ms
+1480 bytes from 130.102.131.123: icmp_seq=10 ttl=241 time=20.781 ms
+1480 bytes from 130.102.131.123: icmp_seq=11 ttl=241 time=22.283 ms
+1480 bytes from 130.102.131.123: icmp_seq=12 ttl=241 time=20.486 ms
+1480 bytes from 130.102.131.123: icmp_seq=13 ttl=241 time=20.918 ms
+1480 bytes from 130.102.131.123: icmp_seq=14 ttl=241 time=20.198 ms
+1480 bytes from 130.102.131.123: icmp_seq=15 ttl=241 time=20.325 ms
+1480 bytes from 130.102.131.123: icmp_seq=16 ttl=241 time=20.377 ms
+1480 bytes from 130.102.131.123: icmp_seq=17 ttl=241 time=20.339 ms
+1480 bytes from 130.102.131.123: icmp_seq=18 ttl=241 time=20.272 ms
+1480 bytes from 130.102.131.123: icmp_seq=19 ttl=241 time=20.325 ms
+1480 bytes from 130.102.131.123: icmp_seq=20 ttl=241 time=20.373 ms
+1480 bytes from 130.102.131.123: icmp_seq=21 ttl=241 time=20.257 ms
+1480 bytes from 130.102.131.123: icmp_seq=22 ttl=241 time=20.534 ms
+1480 bytes from 130.102.131.123: icmp_seq=23 ttl=241 time=20.317 ms
+1480 bytes from 130.102.131.123: icmp_seq=24 ttl=241 time=20.418 ms
+1480 bytes from 130.102.131.123: icmp_seq=25 ttl=241 time=20.299 ms
+1480 bytes from 130.102.131.123: icmp_seq=26 ttl=241 time=20.358 ms
+1480 bytes from 130.102.131.123: icmp_seq=27 ttl=241 time=20.648 ms
+1480 bytes from 130.102.131.123: icmp_seq=28 ttl=241 time=19.341 ms
+1480 bytes from 130.102.131.123: icmp_seq=29 ttl=241 time=20.904 ms
+1480 bytes from 130.102.131.123: icmp_seq=30 ttl=241 time=21.709 ms
+1480 bytes from 130.102.131.123: icmp_seq=31 ttl=241 time=22.114 ms
+1480 bytes from 130.102.131.123: icmp_seq=32 ttl=241 time=20.321 ms
+1480 bytes from 130.102.131.123: icmp_seq=33 ttl=241 time=21.418 ms
+1480 bytes from 130.102.131.123: icmp_seq=34 ttl=241 time=21.306 ms
+1480 bytes from 130.102.131.123: icmp_seq=35 ttl=241 time=20.255 ms
+1480 bytes from 130.102.131.123: icmp_seq=36 ttl=241 time=22.641 ms
+1480 bytes from 130.102.131.123: icmp_seq=37 ttl=241 time=70.164 ms
+1480 bytes from 130.102.131.123: icmp_seq=38 ttl=241 time=21.134 ms
+1480 bytes from 130.102.131.123: icmp_seq=39 ttl=241 time=20.991 ms
+1480 bytes from 130.102.131.123: icmp_seq=40 ttl=241 time=20.643 ms
+1480 bytes from 130.102.131.123: icmp_seq=41 ttl=241 time=20.270 ms
+1480 bytes from 130.102.131.123: icmp_seq=42 ttl=241 time=18.788 ms
+1480 bytes from 130.102.131.123: icmp_seq=43 ttl=241 time=20.362 ms
+1480 bytes from 130.102.131.123: icmp_seq=44 ttl=241 time=20.315 ms
+1480 bytes from 130.102.131.123: icmp_seq=45 ttl=241 time=20.368 ms
+Request timeout for icmp_seq 46
+1480 bytes from 130.102.131.123: icmp_seq=47 ttl=241 time=20.252 ms
+1480 bytes from 130.102.131.123: icmp_seq=48 ttl=241 time=57.490 ms
+1480 bytes from 130.102.131.123: icmp_seq=49 ttl=241 time=18.807 ms
+
+--- www.uq.edu.au ping statistics ---
+50 packets transmitted, 49 packets received, 2.0% packet loss
+round-trip min/avg/max/stddev = 18.614/22.422/70.164/8.778 ms
