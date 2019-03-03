@@ -2,18 +2,18 @@
 
 COURSES INCLUDE BELOW
 
-* COMP9414
+* COMP9414 Artifical-intelligence
 
-* COMP9337
+* COMP9337 Wireless-security-network
 
-* COMP9321
+* COMP9321 Data-Analytics-Service
 
-* COMP9024
+* COMP9024 Data-structure
 
-* COMP9311
+* COMP9311  Database-system
 
-* COMP9331
+* COMP9331 Network
 
-* COMP9021
+* COMP9021 Principle-of-programming
 
 
