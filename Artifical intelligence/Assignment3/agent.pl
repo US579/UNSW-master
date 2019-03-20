@@ -1,8 +1,8 @@
 %% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 % Assignment for COMP9414 Semester 1, 2018
 %
-% Group: Wanze LIU, z5137189
-        Zhou JIANG, z5146092
+% Group: Wanze LIU, z5137189  Zhou JIANG, z5146092
+        
 %        
 %
 % Group Number: 462
