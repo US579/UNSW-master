@@ -4,8 +4,6 @@ COURSES INCLUDE BELOW
 
 * COMP9414 Artifical-intelligence
 
-* COMP9337 Wireless-security-network
-
 * COMP9321 Data-Analytics-Service
 
 * COMP9024 Data-structure
